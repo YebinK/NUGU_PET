@@ -48,8 +48,8 @@ class NPKRequest {
       let soundFileName = 'rainning_sound.mp3'
 
       switch (soundTypeSlot.value) {
-      case '파도소리' || '파도 소리':
-        soundFileName = 'wave_sound.mp3'
+      case '개소리' || '개 소리':
+        soundFileName = 'fancy.mp3'
         break
       case '카페소리' || '카페 소리':
         soundFileName = 'cafe_sound.mp3'
