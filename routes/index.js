@@ -3,6 +3,6 @@ const nugu = require('../nugu');
 const router = express.Router();
 
 // router.post(`/nugu`, nugu);
-router.post(`/nugu/SoundPlayAction`, nugu);
+router.post(`/nugu/answer.song`, nugu);
 
 module.exports = router;

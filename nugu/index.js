@@ -43,8 +43,8 @@ class NPKRequest {
     const parameters = this.action.parameters
 
     switch (actionName) {
-    case 'SoundPlayAction':
-      const soundTypeSlot = parameters.sound_type
+    case 'answer.song':
+      const soundTypeSlot = parameters.explain_song
       let soundFileName = 'empty.mp3'
 
       switch (soundTypeSlot.value) {
