@@ -45,14 +45,17 @@ class NPKRequest {
     switch (actionName) {
     case 'SoundPlayAction':
       const soundTypeSlot = parameters.sound_type
-      let soundFileName = 'rainning_sound.mp3'
+      let soundFileName = 'empty.mp3'
 
       switch (soundTypeSlot.value) {
-      case '개소리' || '개 소리':
-        soundFileName = 'fancy.mp3'
+      case '힐링음악' || '힐링':
+        soundFileName = 'healing.mp3'
         break
-      case '카페소리' || '카페 소리':
-        soundFileName = 'cafe_sound.mp3'
+      case '자장가' || '자장가 음악':
+        soundFileName = 'lullaby.mp3'
+        break
+      case '분리불안' || '분리 불안':
+        soundFileName = 'separation_anxiety.mp3'
         break
       }
 
