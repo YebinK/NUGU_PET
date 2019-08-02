@@ -26,7 +26,7 @@ function audioPlayerDirective(soundFileName) {
 
 function pauseDirective() {
   return new Directive({
-    type: 'AudioPlayer.Stop'
+    type: 'AudioPlayer.Stop',
   })
 }
 
@@ -54,7 +54,7 @@ class NPKRequest {
       let soundFileName = 'empty.mp3'
 
       switch (soundTypeSlot.value) {
-      case '힐링음악' || '힐링':
+      case '힐링' || '힐링 음악':
         soundFileName = 'healing.mp3'
         break
       case '자장가' || '자장가 음악':
