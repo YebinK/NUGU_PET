@@ -26,7 +26,7 @@ function audioPlayerDirective(soundFileName) {
 
 function pauseDirective() {
   return new Directive({
-    type: 'AudioPlayer.Pause',
+    type: 'AudioPlayer.Stop'
   })
 }
 
@@ -68,7 +68,7 @@ class NPKRequest {
       npkResponse.addDirective(audioPlayerDirective(soundFileName))
       break
         
-     case 'pause.song':
+     case 'stop.song':
      npkResponse.addDirective(pauseDirective)   
     }
   }
